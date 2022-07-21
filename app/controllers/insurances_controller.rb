@@ -1,10 +1,7 @@
 class InsurancesController < ApplicationController
   def create
     @insurance = Insurance.new(insurance_params)
-    binding.pry
-    @insurance.calculate_insurance_premium
     @insurance.save
-    # render @insurance
   end
 
   private

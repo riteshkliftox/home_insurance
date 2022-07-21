@@ -464,7 +464,7 @@
                     </form> -->
                     <%= render partial: 'insurances/form'%>
                     <div class="c-homeowner__result" style="display:none", id= "second-form">
-                      <%= render partial: 'insurances/insurance' %>
+                      <%= render partial: 'insurances/form_two' if @insurance.present? %>
                     </div>
                   </div>
                   <script>googleAnalytics.sendEvent('homeowner-title-pay', 'start');</script>
